@@ -1,0 +1,170 @@
+/* ================================
+   ESTILO GERAL DO SITE
+================================ */
+
+/* Define fonte padrão e remove margens */
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#f4f4f4;
+}
+
+
+/* ================================
+   MENU DE NAVEGAÇÃO
+================================ */
+
+nav{
+background:#333;
+padding:15px;
+}
+
+/* organização horizontal do menu */
+nav ul{
+list-style:none;
+display:flex;
+justify-content:center;
+gap:30px;
+margin:0;
+padding:0;
+}
+
+/* estilo dos links */
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* efeito ao passar o mouse */
+nav a:hover{
+color:#00bfff;
+}
+
+
+/* ================================
+   CONTAINER PRINCIPAL
+================================ */
+
+.container{
+max-width:900px;
+margin:auto;
+padding:40px;
+background:white;
+}
+
+
+/* ================================
+   TÍTULOS
+================================ */
+
+h1{
+text-align:center;
+margin-bottom:30px;
+}
+
+h2{
+margin-top:30px;
+}
+
+
+/* ================================
+   CARDS DO PORTFÓLIO
+================================ */
+
+.card{
+background:#eeeeee;
+padding:20px;
+margin:20px 0;
+border-radius:8px;
+}
+
+
+/* ================================
+   FORMULÁRIO DE CONTATO
+================================ */
+
+form{
+margin-top:20px;
+}
+
+input{
+width:100%;
+padding:10px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+textarea{
+width:100%;
+padding:10px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:5px;
+height:120px;
+}
+
+button{
+padding:10px 20px;
+background:#333;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* efeito hover botão */
+button:hover{
+background:#555;
+}
+
+
+/* ================================
+   TABELA DE CONHECIMENTOS
+================================ */
+
+/* tabela principal */
+.tabela-conhecimentos{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+/* cabeçalho da tabela */
+.tabela-conhecimentos th{
+background:#333;
+color:white;
+padding:12px;
+}
+
+/* células da tabela */
+.tabela-conhecimentos td{
+padding:10px;
+border:1px solid #ccc;
+text-align:center;
+}
+
+/* linhas alternadas */
+.tabela-conhecimentos tr:nth-child(even){
+background:#f2f2f2;
+}
+
+
+/* ================================
+   RESPONSIVIDADE SIMPLES
+================================ */
+
+/* ajusta layout para telas menores */
+@media(max-width:768px){
+
+nav ul{
+flex-direction:column;
+align-items:center;
+}
+
+.container{
+padding:20px;
+}
+
+}

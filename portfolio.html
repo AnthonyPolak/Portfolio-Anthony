@@ -1,65 +1,170 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfólio - Anthony Polak</title>
+<title>Portfólio</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#222;
+padding:15px;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+gap:30px;
+list-style:none;
+padding:0;
+margin:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#00bfff;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+h1{
+text-align:center;
+margin-bottom:40px;
+}
+
+.card{
+background:white;
+padding:25px;
+margin-bottom:25px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+margin-top:0;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 18px;
+background:#0077cc;
+color:white;
+text-decoration:none;
+border-radius:5px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#005fa3;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
 
-<h2>Anthony Polak</h2>
-
 <nav>
-<a href="index.html">Sobre mim</a>
-<a href="formacao.html">Formação</a>
-<a href="portfolio.html">Portfólio</a>
-<a href="contato.html">Contato</a>
+<ul>
+<li><a href="sobre.html">Sobre mim</a></li>
+<li><a href="formacao.html">Formação</a></li>
+<li><a href="portfolio.html">Portfólio</a></li>
+<li><a href="contato.html">Contato</a></li>
+</ul>
 </nav>
-
-<button onclick="tema()">🌙</button>
 
 </header>
 
 <section class="container">
 
-<h1>Portfólio</h1>
+<h1>Meus Projetos</h1>
 
 <div class="card">
 
-<h3>Projeto Cofrinho Java</h3>
+<h3>Projeto Portfólio Web</h3>
 
-<p>Sistema desenvolvido em Java para controle de moedas e gerenciamento
-de valores armazenados.</p>
+<p>
+Desenvolvimento de um portfólio pessoal utilizando HTML5, CSS3 e JavaScript com foco em apresentação profissional de projetos.
+</p>
+
+<a href="https://github.com/AnthonyPolak/Portfolio-Anthony.git" target="_blank" class="btn">
+Ver projeto no GitHub
+</a>
 
 </div>
 
+
 <div class="card">
 
-<h3>Consultas SQL</h3>
+<h3>Ecommerce TKS</h3>
 
-<p>Consultas e scripts SQL utilizados para geração de MDF-e
-e relatórios de banco de dados.</p>
+<p>
+Projeto acadêmico envolvendo toda a estrutura de um sistema de Ecommerce no Web.
+</p>
+
+<a href="https://github.com/AnthonyPolak/TKS.git" target="_blank" class="btn">
+Ver projeto no GitHub
+</a>
 
 </div>
 
+
 <div class="card">
 
-<h3>Planilha de Controle Financeiro</h3>
+<h3>Projeto de Fundamentos</h3>
 
-<p>Planilha com controle de despesas, receitas e indicadores
-financeiros mensais.</p>
+<p>
+Projeto envovlendo Html, CSS e JavaScript para inicio a Programação.
+</p>
+
+<a href="https://github.com/AnthonyPolak/Trabalho-Fundamentos.git" target="_blank" class="btn">
+Ver projeto no GitHub
+</a>
+
+</div>
+
+
+<div class="card">
+
+<h3>Site para Fundamentos Uninter</h3>
+
+<p>
+Conceito Básico em HTML para entrega de trablho de Fundamentos.
+</p>
+
+<a href="https://github.com/AnthonyPolak/fds.uninter.git" target="_blank" class="btn">
+Ver projeto no GitHub
+</a>
 
 </div>
 
 </section>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
+```
